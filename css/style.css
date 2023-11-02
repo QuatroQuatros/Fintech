@@ -1,0 +1,20 @@
+:root {
+    --background: #232323;
+    --background-form: #424242;
+    --roxo: #6057F1;
+    --secundaria: #A5A0F5;
+    --hover: #BEBAFF;
+    --sub: #9790f8;
+    --sla: #e4dede;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Tamil', sans-serif;
+}
+
+body{
+    background-color: var(--background) !important;
+}

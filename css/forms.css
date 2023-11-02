@@ -1,0 +1,110 @@
+.container{
+    display: flex;
+    height: 100vh !important;
+}
+
+.container-form{
+    display: flex;
+    width: 40%;
+    height: min-content;
+    /* height: auto; */
+    padding: 15px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 20px;
+    background-color: var(--background-form);
+
+}
+
+.titulo{
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--sub);
+}
+
+.sub-titulo{
+    color: var(--sla);
+    text-align: center;
+}
+
+form{
+    font-size: 20px;
+    width: 80%;
+}
+
+form label{
+    color: var(--secundaria);
+}
+
+.btn-cadastrar{
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    color: white !important;
+    background-color: var(--roxo) !important;
+}
+
+.forgot-pass{
+    text-decoration: none;
+    color: var(--sub);
+    float: right;
+    margin-bottom: 10px;
+}
+
+.forgot-pass:hover{
+    color: var(--secundaria);
+}
+
+.app-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-login p{
+    margin-top: 10px;
+    color: var(--sub);
+
+}
+
+.app-login img{
+    width: 40%;
+    height: 40%;
+    cursor: pointer;
+}
+
+.link-register{
+    margin-top: 15px;
+    text-decoration: none;
+    color: var(--sub);
+}
+
+.container-img{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-img img{
+    width: 100%;
+    height: 100%;
+
+}
+
+@media (max-width: 770px)
+{
+    .container-form{
+        width: 100%;
+    }
+    .container-img{
+        display: none;
+    }
+    .container-img img{
+        display: none;
+    
+    }
+}
