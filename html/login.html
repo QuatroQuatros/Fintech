@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Esqueci a senha</title>
-    <link rel="stylesheet" href="./css/style.css"/>
-    <link rel="stylesheet" href="./css/forms.css"/>
+    <title>Entrar</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/forms.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;200;300;400&family=Lato:wght@400;700&family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
@@ -16,23 +16,32 @@
     
     <div class="container d-flex justify-content-center align-items-center">
         <div class="container-fluid container-form">
-            <h1 class="titulo">Esqueceu a senha?</h1>
-            <p class="sub-titulo">Sem problemas! insira seu email que enviaremos o link para você resetar sua senha.</p>
+            <h1 class="titulo">Olá novamente!</h1>
+            <p class="sub-titulo">Por favor, insira seus dados:</p>
             <form method="POST" action="">
                 <div class=" form-group mb-3">
                     <label for="email" class="form-label">Email</label>
                     <input type="email" class="form-control" name="email" id="email" placeholder="exemplo@exemplo.com" required>
                 </div>
-                <button class="btn btn-md btn-cadastrar" type="submit">Enviar</button>
+                
+                <div class="form-group">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" class="form-control" name="senha" id="senha" placeholder="********" required>
+                </div>
+                <a href="./forgot-password.html" class="forgot-pass">Esqueceu a senha?</a>
+                <button class="btn btn-md btn-cadastrar" type="submit">Entrar</button>
             </form>
-           
-            <a href="./register.html" class="link-register">Voltar para o Login</a>
+            <div class="app-login ">
+                <p>ou faça login com:</p>
+                <img src="../img/icons/google.svg" >
+            </div>
+            <a href="./register.html" class="link-register">Não possui conta? cadastre-se</a>
            
             
         </div>
 
         <div class="container-fluid container-img">
-            <img src ="./img/forgot.svg">
+            <img src ="../img/login.svg">
         </div>
         
     </div>
