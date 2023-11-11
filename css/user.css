@@ -1,0 +1,3 @@
+.list-group-item {
+    border: var(--bs-list-group-border-width) solid var(--background-form) !important;
+}
