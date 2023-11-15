@@ -75,3 +75,7 @@
     border-radius: 10px;
     background-color: #474747;
 }
+
+footer{
+    position: static !important;
+}
