@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="stylesheet" href="./css/tela_Despesas.css"> 
-    <link rel="stylesheet" href="./css/index.css"/>   
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css"/>   
+    <link rel="stylesheet" href="../css/tela_Despesas.css"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,25 +18,50 @@
 </head>
 <body>
     
-    <header>
-
-        <nav class="navbar navbar-expand-md menu">
-            <div class="container nav">
-                <h1>Histórico de Despesas</h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="menuNavbar" toggle="collapse" data-target=".navbar-collapse">
-                    <div class="navbar-nav ms-auto itens mr3">
-                        <a class="linksNav nav-link active" aria-current="page" href="#sobre">Rendas</a>
-                        <a class="linksNav nav-link active" aria-current="page" href="#sobre">Despesas</a>
-                        <a class="linksNav nav-link active" aria-current="page" href="#sobre">Metas</a>
-                        <a class="linksNav nav-link active" aria-current="page" href="#sobre">Meus dados</a>
-                        <a class="linksNav nav-link" aria-current="page" href="#contato">Início</a>
+    <header id="home">
+        <nav class="navbar navbar-expand-md py-3 menu">
+          <div class="container">
+            <a class="navbar-brand logo fs-1" href="#">Extrato</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="menuNavbar" toggle="collapse"
+              data-target=".navbar-collapse">
+              <div class="navbar-nav ms-auto itens">
+                <a class="nav-link active" aria-current="page" href="#home">Renda</a>
+                <a class="nav-link" aria-current="page" href="#sobre">Extrato</a>
+                <a class="nav-link" aria-current="page" href="#contato">Metas</a>
+                <a class="nav-link" aria-current="page" href="#contato">Meus Dados</a>
+              </div>
+              <div class="navbar-nav">
+                <div class="user-profile dropdown dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="mb-3">
+                      <a class="dropdown-item d-flex flex-row align-items-center " href="./user.html">
+                        <img src="../img/user.png" class="rounded-circle me-2" id="" alt="..." />
+                        <p class="text-white my-auto text-wrap"> Guilherme Cesar</p>
+                      </a> 
+                    </li>
+                    <li><a class="dropdown-item" href="./user.html">Ver Perfil</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sair</a></li>
+                  </ul>
+                  <div class="user-photo">
+                    <a href="./user.html">
+                      <img src="../img/user2.jpg" />
+                    </a>
+                  </div>
+                  <div class="user-info">
+                    <h3>Olá, Guilherme!</h3>
+                    <p>Bem vindo</p>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </nav>
-
     </header>
 
     <section>
@@ -60,7 +86,7 @@
         <div class="container">
             <div class="row justify-content-center align-items-center mb-5">
                 <div class="col-4 colunas">
-                    <img class="imagemExemplo" src="./img/Netflix-Logo.png" alt="">
+                    <img class="imagemExemplo" src="../img/Netflix-Logo.png" alt="">
                 </div>
                 <div class="col-5">    
                     <p class="netflix nomeDespesa">Netflix</p>
@@ -75,7 +101,7 @@
 
             <div class="row justify-content-center align-items-center mb-5">
                 <div class="col-4 colunas">
-                    <img class="imagemExemplo" src="./img/nubank-logo.png" alt="">
+                    <img class="imagemExemplo" src="../img/nubank-logo.png" alt="">
                 </div>
                 <div class="col-5">    
                     <p class="netflix nomeDespesa">Nubank</p>
@@ -90,7 +116,7 @@
 
             <div class="row justify-content-center align-items-center mb-5">
                 <div class="col-4 colunas">
-                    <img class="imagemExemplo" src="./img/sabesp-logo.png" alt="">
+                    <img class="imagemExemplo" src="../img/sabesp-logo.png" alt="">
                 </div>
                 <div class="col-5">    
                     <p class="netflix nomeDespesa">Sabesp</p>
@@ -105,7 +131,7 @@
 
             <div class="row justify-content-center align-items-center mb-5">
                 <div class="col-4 colunas">
-                    <img class="imagemExemplo" src="./img/amazon-icon.png" alt="">
+                    <img class="imagemExemplo" src="../img/amazon-icon.png" alt="">
                 </div>
                 <div class="col-5">    
                     <p class="netflix nomeDespesa">Amazon</p>
@@ -120,7 +146,7 @@
             
             <div class="row justify-content-center align-items-center mb-5">
                 <div class="col-4 colunas">
-                    <img class="imagemExemplo" src="./img/renner-logo.png" alt="">
+                    <img class="imagemExemplo" src="../img/renner-logo.png" alt="">
                 </div>
                 <div class="col-5">    
                     <p class="netflix nomeDespesa">Renner</p>
@@ -135,7 +161,7 @@
 
            <div class="row justify-content-center align-items-center mb-5">
                 <div class="col-4 colunas">
-                    <img class="imagemExemplo" src="./img/amazon-kindle-.png" alt="">
+                    <img class="imagemExemplo" src="../img/amazon-kindle-.png" alt="">
                 </div>
                 <div class="col-5">    
                     <p class="netflix nomeDespesa">Kindle Unlimited</p>
@@ -150,7 +176,7 @@
 
             <div class="row justify-content-center align-items-center mb-5">
                 <div class="col-4 colunas">
-                    <img class="imagemExemplo" src="./img/carrefour-logo.png" alt="">
+                    <img class="imagemExemplo" src="../img/carrefour-logo.png" alt="">
                 </div>
                 <div class="col-5">    
                     <p class="netflix nomeDespesa">Carrefour</p>
@@ -165,7 +191,7 @@
 
             <div class="row justify-content-center align-items-center mb-5">
                 <div class="col-4 colunas">
-                    <img class="imagemExemplo" src="./img/cinemark-1-logo.png" alt="">
+                    <img class="imagemExemplo" src="../img/cinemark-1-logo.png" alt="">
                 </div>
                 <div class="col-5">    
                     <p class="netflix nomeDespesa">Cinemark</p>
@@ -182,7 +208,7 @@
 
             <div class="row justify-content-center align-items-center mb-5">
                 <div class="col-4 colunas">
-                    <img class="imagemExemplo" src="./img/mercado-livre-logo.png" alt="">
+                    <img class="imagemExemplo" src="../img/mercado-livre-logo.png" alt="">
                 </div>
                 <div class="col-5">    
                     <p class="netflix nomeDespesa">Mercado Livre</p>
