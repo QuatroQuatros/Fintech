@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', () => {
     styleElement.innerHTML = customCSS;
     document.head.appendChild(styleElement);
 
-    fetch('/arquivos.json') 
+    fetch('../js/arquivos.json') 
         .then(response => response.json())
         .then(despesasDoBanco => {
             const despesasContainer = document.getElementById('despesas');
@@ -77,7 +77,7 @@ window.addEventListener('DOMContentLoaded', () => {
         });
 });
 window.addEventListener('DOMContentLoaded', () => {
-    fetch('/arquivos.json') 
+    fetch('../js/arquivos.json') 
         .then(response => response.json())
         .then(data => {
             const valoresDespesas = data.map(item => parseFloat(item.valor.replace(',', '.'))); // Convertendo os valores para números
