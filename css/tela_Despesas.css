@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Tamil', sans-serif;
+}
 
 .navbar {
     color: var(--secundaria);
@@ -90,10 +96,6 @@
     min-width: 50%;
 }
 
-.imagemExemplo{
-    max-width: 1%;
-}
-
 .nomeDespesa {
     font-size: 20px;
 }
@@ -118,10 +120,6 @@
     text-decoration: none !important;
     color: var(--secundaria);
     font-size: 17px;
-}
-
-#despesasDescricao img {
-    width: 10%;
 }
 
 .col-sm-4 img {
