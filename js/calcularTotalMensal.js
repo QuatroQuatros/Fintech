@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-    fetch('/arquivos.json') // Caminho para o arquivo JSON
+    fetch('/arquivos.json') 
         .then(response => response.json())
         .then(data => {
             const valoresDespesas = data.map(item => parseFloat(item.valor.replace(',', '.'))); // Convertendo os valores para números
