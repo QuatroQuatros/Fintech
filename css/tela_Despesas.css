@@ -7,7 +7,7 @@
 
 .navbar {
     color: var(--secundaria);
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .navbar a{
@@ -17,10 +17,6 @@
 
 .navbar h1{
     color: var(--hover);
-    margin-left: 20px;
-}
-
-.linksNav {
     margin-left: 20px;
 }
 
@@ -177,17 +173,22 @@
     justify-content: end;
     align-items: center;
     margin-bottom: 100px;
+    text-align: center;
 }
 
 .adicionarBotao button {
     background-color: var(--secundaria);
     border-radius: 14px;
     border: none;
-    width: 14%;
+    width: 10%;
     height: 30px;
     text-align: center;    
     text-decoration: none;    
     color: var(--background);
+}
+
+.adicionarBotao button:hover {
+    background-color: var(--hover);
 }
 
 .total_mensal {
@@ -197,7 +198,7 @@
     /* width: 50%; */
     padding: 15px;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -223,7 +224,7 @@
         font-size: 13px;
     }
 
-} */
+} 
 
 @media (min-width:320px)  { 
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
