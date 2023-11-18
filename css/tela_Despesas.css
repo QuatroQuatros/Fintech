@@ -198,6 +198,7 @@ body{
     display: flex;
     justify-content: end;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .adicionarBotao button {
@@ -213,7 +214,7 @@ body{
 
 .total_mensal {
     background-color: #2B2B2B;
-    border-radius: 15px;
+    border-radius: 13px;
     text-align: center;
     /* width: 50%; */
     padding: 15px;
@@ -230,22 +231,18 @@ body{
     color: #EA9C9C;
 }
 
-/* @media (max-width: 425px), (min-width: 375px) {
+@media (max-width: 375px) {
 
     .netflix {
         font-size: 17px;
     }
 
     .imagemExemplo {
-        width: 40%;
-    }
-
-    .imagemExemplo {
-        width: 200px;
+        height: 3rem;
     }
 
     .container nav h1 {
         font-size: 13px;
     }
 
-} */
+}
