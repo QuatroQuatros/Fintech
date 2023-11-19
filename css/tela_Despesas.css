@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Tamil', sans-serif;
+}
+
+.navbar {
+    color: var(--secundaria);
+    margin-bottom: 50px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--secundaria);
+}
+
+.navbar h1{
+    color: var(--hover);
+    margin-left: 20px;
+}
+
+.linksNav {
+    margin-left: 20px;
+}
+
+.formDespesas {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-despesas {
+    width: 50%;
+    max-width: 50%;
+    min-width: 10%;
+    height: 43px;
+    padding: 25px;
+    background-color: #2B2B2B;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 17px;
+}
+
+.botaoFiltro {
+    background-color: var(--secundaria);
+    color: var(--background);
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    height: 40px;
+}
+
+.botaoFiltro:hover {
+    background-color: var(--hover);
+}
+
+.modalDespesa {
+    background-color: var(--background-);
+}
+
+.dropdown-menu {
+    width: 60px;
+}
+
+#filtroUm, #filtroDois, #filtroTres, #filtroQuatro {
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 13px;
+}
+
+#despesas {
+    margin-top: 70px;
+}
+
+.container {
+    color: var(--sla);
+}
+ 
+.linha {
+    color: #575757;
+}
+
+.col-4 {
+    border-bottom: 20px;
+}
+
+
+.imagemExemplo {
+    width: 50%;
+    max-width: 50%; /*maximo de largura que ela chega quando a tela aumenta*/
+    min-width: 50%;
+}
+
+.nomeDespesa {
+    font-size: 20px;
+}
+
+.descricao {
+    color: #c5c2f0;
+    font-size: 17px;
+}
+
+.precoDespesa { 
+    color: #e24751;
+    font-size: 18px;
+}
+
+.col colunas {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.col-md a{ 
+    text-decoration: none !important;
+    color: var(--secundaria);
+    font-size: 17px;
+}
+
+.col-sm-4 img {
+    max-width: 20%;
+}
+
+.modal-content {
+    background-color: var(--background-form);
+}
+
+.modal-body, .modal-header{
+    background-color: var(--formDespesa);
+}
+
+.formDespesa {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    color: var(--hover);
+    font-size: 17px;
+}
+
+.inputGroup {
+    border: none;
+    background-color: var(--background);
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+    color: var(--sla);
+    outline: none;
+}
+
+.icon {
+    border: none;
+    background-color: var(--roxo);
+    border-radius: 8px;
+}
+
+.footerModal {
+    background-color: #e24751;
+}
+
+.modal-footer button {
+    background-color: var(--roxo);
+    border: none;
+}
+
+.modal-footer button:hover {
+    background-color: var(--sub);
+    border: none;
+}
+
+.adicionarBotao {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.adicionarBotao button {
+    background-color: var(--secundaria);
+    border-radius: 14px;
+    border: none;
+    width: 14%;
+    height: 30px;
+    text-align: center;    
+    text-decoration: none;    
+    color: var(--background);
+}
+
+.total_mensal {
+    background-color: #2B2B2B;
+    border-radius: 15px;
+    text-align: center;
+    /* width: 50%; */
+    padding: 15px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.total_mensal h4 {
+    margin: 0px;
+}
+
+.total {
+    color: #EA9C9C;
+}
+
+/* @media (max-width: 425px), (min-width: 375px) {
+
+    .netflix {
+        font-size: 17px;
+    }
+
+    .imagemExemplo {
+        width: 40%;
+    }
+
+    .imagemExemplo {
+        width: 200px;
+    }
+
+    .container nav h1 {
+        font-size: 13px;
+    }
+
+} */
+
+@media (min-width:320px)  { 
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    .imagemExemplo {
+        width: 40%;
+        max-width: 40%;
+        min-width: 40%;
+    }
+}
+
+@media (min-width:480px)  { 
+    /* smartphones, Android phones, landscape iPhone */ 
+    .imagemExemplo {
+        width: 36%;
+        max-width: 36%;
+        min-width: 36%;
+    }
+}
+
+@media (min-width:600px)  { 
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    .imagemExemplo {
+        width: 28%;
+        max-width: 28%;
+        min-width: 28%;
+    }
+}
+
+@media (min-width:801px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .imagemExemplo {
+        width: 26%;
+        max-width: 26%;
+        min-width: 26%;
+    }
+}
+
+@media (min-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */ 
+    .imagemExemplo {
+        width: 18%;
+        max-width: 18%;
+        min-width: 18%;
+    }
+}
+
+/* @media (min-width:1281px) { 
+    // hi-res laptops and desktops  
+}*/

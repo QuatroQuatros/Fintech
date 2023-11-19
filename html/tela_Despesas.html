@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css"/>   
+    <link rel="stylesheet" href="../css/tela_Despesas.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;200;300;400&family=Lato:wght@400;700&family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+    <title>Histórico de despesas</title>
+</head>
+<body>
+    
+    <header id="home">
+        <nav class="navbar navbar-expand-md py-3 menu">
+          <div class="container-fluid">
+            <a class="navbar-brand logo fs-1" href="#">Extrato</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="menuNavbar" toggle="collapse"
+              data-target=".navbar-collapse">
+              <div class="navbar-nav ms-auto itens">
+                <a class="nav-link active" aria-current="page" href="#home">Renda</a>
+                <a class="nav-link" aria-current="page" href="./tela_Despesas.html">Extrato</a>
+                <a class="nav-link" aria-current="page" href="#contato">Metas</a>
+                <a class="nav-link" aria-current="page" href="./home.html">Meus Dados</a>
+              </div>
+              <div class="navbar-nav">
+                <div class="user-profile dropdown dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <ul class="dropdown-menu bg-dark">
+                    <li class="mb-3">
+                      <a class="dropdown-item d-flex flex-row align-items-center " href="./user.html">
+                        <img src="../img/user.png" class="rounded-circle me-2" id="" alt="..." />
+                        <p class="text-white my-auto text-wrap"> Guilherme Cesar</p>
+                      </a> 
+                    </li>
+                    <li><a class="dropdown-item" href="./user.html">Ver Perfil</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sair</a></li>
+                  </ul>
+                  <div class="user-photo">
+                    <a href="./user.html">
+                      <img src="../img/user2.jpg" />
+                    </a>
+                  </div>
+                  <div class="user-info">
+                    <h3>Olá, Guilherme!</h3>
+                    <p>Bem vindo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <section>
+        <form class="formDespesas" action="#">
+            <input class="form-despesas" type="search" name="pesquisarDespesas" id="#filtropesquisa" placeholder="Pesquise por valores, datas, descrição, filtro...">
+
+            <div class="modalDespesa dropdown">
+                <button class="botaoFiltro btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    <span class="caret"></span><i class="fa-solid fa-filter" style="color: #232323;"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <input type="checkbox" id="filtroUm" name="(grupo pertencente) filtro" value="(valor da checkbox) maiorValor"> <label for="filtroUm"> Maior Valor</label><br>
+                  <input type="checkbox" id="filtroDois" name="filtro" value="menorValor"> <label for="filtroDois"> Menor Valor</label><br>
+                  <input type="checkbox" id="filtroTres" name="filtro" value="menorData"> <label for="filtroTres"> Maior Data</label><br>
+                  <input type="checkbox" id="filtroQuatro" name="filtro" value="maiorData"> <label for="filtroQuatro"> Menor Data</label><br>
+                </ul>
+            </div>
+        </form>
+    </section>
+    
+    <main id="despesas">
+        <div class="container">
+            <div class="row justify-content-center align-items-center mb-5">
+                <div class="col-4 colunas">
+                    <img class="imagemExemplo" src="../img/Netflix-Logo.png" alt="">
+                </div>
+                <div class="col-5">    
+                    <p class="netflix nomeDespesa">Netflix</p>
+                    <h6 class="netflix descricao">Mensalidade</h6>
+                    <h6>08/10</h6>
+                </div>
+                <div class="col-1 colunas">
+                    <p class="netflix precoDespesa">-38,00</p>
+                </div>
+                <hr class="linha">
+            </div>
+
+            <div class="row justify-content-center align-items-center mb-5">
+                <div class="col-4 colunas">
+                    <img class="imagemExemplo" src="../img/nubank-logo.png" alt="">
+                </div>
+                <div class="col-5">    
+                    <p class="netflix nomeDespesa">Nubank</p>
+                    <h6 class="netflix descricao">Fatura cartão</h6>
+                    <h6>08/10</h6>
+                </div>
+                <div class="col-1 colunas">
+                    <p class="netflix precoDespesa">-209,00</p>
+                </div>
+                <hr class="linha">
+            </div>
+
+            <div class="row justify-content-center align-items-center mb-5">
+                <div class="col-4 colunas">
+                    <img class="imagemExemplo" src="../img/sabesp-logo.png" alt="">
+                </div>
+                <div class="col-5">    
+                    <p class="netflix nomeDespesa">Sabesp</p>
+                    <h6 class="netflix descricao">Conta de água</h6>
+                    <h6>08/10</h6>
+                </div>
+                <div class="col-1 colunas">
+                    <p class="netflix precoDespesa">-120,73</p>
+                </div>
+                <hr class="linha">
+            </div>
+
+            <div class="row justify-content-center align-items-center mb-5">
+                <div class="col-4 colunas">
+                    <img class="imagemExemplo" src="../img/amazon-icon.png" alt="">
+                </div>
+                <div class="col-5">    
+                    <p class="netflix nomeDespesa">Amazon</p>
+                    <h6 class="netflix descricao">Liquidificador novo</h6>
+                    <h6>13/10</h6>
+                </div>
+                <div class="col-1 colunas">
+                    <p class="netflix precoDespesa">-220,91</p>
+                </div>
+                <hr class="linha">
+            </div>
+            
+            <div class="row justify-content-center align-items-center mb-5">
+                <div class="col-4 colunas">
+                    <img class="imagemExemplo" src="../img/renner-logo.png" alt="">
+                </div>
+                <div class="col-5">    
+                    <p class="netflix nomeDespesa">Renner</p>
+                    <h6 class="netflix descricao">Roupas para usar nas férias!</h6>
+                    <h6>13/10</h6>
+                </div>
+                <div class="col-1 colunas">
+                    <p class="netflix precoDespesa">-250,53</p>
+                </div>
+                <hr class="linha">
+            </div>
+
+           <div class="row justify-content-center align-items-center mb-5">
+                <div class="col-4 colunas">
+                    <img class="imagemExemplo" src="../img/amazon-kindle-.png" alt="">
+                </div>
+                <div class="col-5">    
+                    <p class="netflix nomeDespesa">Kindle Unlimited</p>
+                    <h6 class="netflix descricao">Mensalidade</h6>
+                    <h6>21/10</h6>
+                </div>
+                <div class="col-1 colunas">
+                    <p class="netflix precoDespesa">-19,90</p>
+                </div>
+                <hr class="linha">
+            </div>
+
+            <div class="row justify-content-center align-items-center mb-5">
+                <div class="col-4 colunas">
+                    <img class="imagemExemplo" src="../img/carrefour-logo.png" alt="">
+                </div>
+                <div class="col-5">    
+                    <p class="netflix nomeDespesa">Carrefour</p>
+                    <h6 class="netflix descricao">Lanchinhos para comer no cinema</h6>
+                    <h6>24/10</h6>
+                </div>
+                <div class="col-1 colunas">
+                    <p class="netflix precoDespesa">-50,00</p>
+                </div>
+                <hr class="linha">
+            </div>
+
+            <div class="row justify-content-center align-items-center mb-5">
+                <div class="col-4 colunas">
+                    <img class="imagemExemplo" src="../img/cinemark-1-logo.png" alt="">
+                </div>
+                <div class="col-5">    
+                    <p class="netflix nomeDespesa">Cinemark</p>
+                    <h6 class="netflix descricao">Ingresso do cinema</h6>
+                    <h6>24/10</h6>
+                </div>
+                <div class="col-1 colunas">
+                    <p class="netflix precoDespesa">-45,00</p>
+                </div>
+                <hr class="linha">
+            </div>
+
+ 
+
+            <div class="row justify-content-center align-items-center mb-5">
+                <div class="col-4 colunas">
+                    <img class="imagemExemplo" src="../img/mercado-livre-logo.png" alt="">
+                </div>
+                <div class="col-5">    
+                    <p class="netflix nomeDespesa">Mercado Livre</p>
+                    <h6 class="netflix descricao">Tintas novas para sobrinho</h6>
+                    <h6>7/11</h6>
+                </div>
+                <div class="col-1 colunas">
+                    <p class="netflix precoDespesa">-43,90</p>
+                </div>
+                <hr class="linha">
+            </div>
+ 
+            <div class="adicionarBotao">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adicionarDespesa" ><i class="fa-solid fa-plus" style="color: #232323;"></i></button>
+            </div>
+            
+            <div class="modal fade" id="adicionarDespesa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ModalLabel">Adicione uma despesa:</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="formDespesa" action="#">
+                            <label for="despesaNome">Onde você gastou?</label>
+                            <input class="inputGroup" type="text" id="despesaNome" name="name" required>
+
+                            <label for="#">Adicione um ícone</label>
+                            <input class="icon" type="file" id="iconeDespesa" name="image" required>
+
+                            <label for="despesaDescricao">Descrição da despesa:</label>
+                            <input class="inputGroup" type="text" id="despesaDescricao" name="descricao" required>
+
+                            <label for="despesaValor">Valor:</label>
+                            <input class="inputGroup" type="number" id="despesaValor" name="valor" required>
+
+                            <label for="despesaData">Data:</label>
+                            <input class="inputGroup" type="date" id="despesaData" name="data" required>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="botaoDespesa btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="botaoDespesa btn btn-primary">Salvar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            <section class="row m-5 total_mensal">
+                <div class="col">
+                    <h4>Total mensal:</h4>
+                </div>
+                <div class="col">
+                    <h4 class="total">R$ -997,97</h4>
+                </div>
+            </section>
+          </div>
+            
+    </main>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script>
+        var currentDate = new Date().toISOString().split('T')[0];
+  
+        document.getElementById('despesaData').setAttribute('max', currentDate);
+    </script>
+    
+</body>
+</html>

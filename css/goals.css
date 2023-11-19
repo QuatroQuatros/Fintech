@@ -58,6 +58,7 @@ font-size: 1.2rem;
 
 /* --- END FIRST CARD --- */
 
+/* --- SECOND CARD --- */
 .card-metas{
     background: linear-gradient(180deg, #303030 0%, rgba(40, 40, 40, 0.00) 99.99%, rgba(60, 60, 60, 0.00) 100%);
     height: 35vh;
@@ -148,6 +149,16 @@ font-size: 1.2rem;
     color: var(--secundaria);
 }  
 
+.mid-content a{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.mid-content button img{
+    width: 100%;
+}
+
 .bottom-content{
     display: flex;
     justify-content: flex-start;
@@ -173,5 +184,24 @@ font-size: 1.2rem;
 
     position: fixed;
     bottom: 15%;
+}
+
+/* --- END SECOND CARD --- */
+ 
+/* --- MODAL --- */
+
+.icon{
+    display: flex;
+}
+
+.input-icon{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-icon .form-icon{
+    max-height: 30px;
+    width: 100%;
 }
 
