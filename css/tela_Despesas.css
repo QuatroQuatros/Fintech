@@ -94,8 +94,21 @@
 
 .nomeDespesa {
     font-size: 20px;
+    margin: 0;
 }
 
+.botaoAdicionarMaisMenos {
+    margin-left: 50%;
+}
+
+.adicionarBotao {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 100px;
+    text-align: center;
+    margin: 0;
+}
 .descricao {
     color: #c5c2f0;
     font-size: 17px;
@@ -103,9 +116,12 @@
 
 .precoDespesa { 
     color: #e24751;
-    font-size: 18px;
+    font-size: 20px;
 }
 
+.precoMoeda {
+    margin-left: 25%;
+}
 .col colunas {
     display: flex;
     text-align: center;
@@ -172,8 +188,8 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    margin-bottom: 100px;
-    text-align: center;
+    margin: 0;
+   
 }
 
 .adicionarBotao button {
@@ -185,6 +201,8 @@
     text-align: center;    
     text-decoration: none;    
     color: var(--background);
+    margin: 0;
+    
 }
 
 .adicionarBotao button:hover {
@@ -208,6 +226,15 @@
 
 .total {
     color: #EA9C9C;
+}
+
+.adicionarBotao {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 100px;
+    text-align: center;
+    margin: 0;
 }
 
 @media (max-width: 375px) {
