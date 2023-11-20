@@ -60,6 +60,27 @@ body{
     border-radius: 5px;
     outline: none;
     font-size: 17px;
+    
+}
+
+.botaoImg {
+    background: url('/img/lupa.png') no-repeat center center;
+    background-size: cover;
+    border: none;
+    width: 30px; /* ajuste conforme necessário */
+    height: 30px; /* ajuste conforme necessário */
+    
+    
+}
+
+.botaoPesquisar {
+    background-color: var(--secundaria);
+    color: var(--background);
+    border: none;
+    border-radius: 5px;
+    width: 70px;
+    height: 40px;
+    font-weight: bold;
 }
 
 .botaoFiltro {
@@ -118,6 +139,12 @@ body{
 
 .nomeDespesa {
     font-size: 20px;
+    margin: 0;
+   
+}
+
+.nomeRecorrencia {
+    font-size: 20px;
     margin-bottom: 2px;
 }
 
@@ -126,11 +153,16 @@ body{
     font-size: 15px;
 }
 
+
+
 .precoDespesa { 
-    color: #e24751;
-    font-size: 18px;
+    color: #47e251;
+    font-size: 20px;
 }
 
+.precoMoeda {
+    margin-left: 25%;
+}
 .col colunas {
     text-align: center;
 }
@@ -199,17 +231,21 @@ body{
     display: flex;
     justify-content: end;
     align-items: center;
+    margin: 0;
+   
 }
 
 .adicionarBotao button {
     background-color: var(--secundaria);
     border-radius: 14px;
     border: none;
-    width: 14%;
+    width: 10%;
     height: 30px;
     text-align: center;    
     text-decoration: none;    
     color: var(--background);
+    margin: 0;
+    
 }
 
 .total_mensal {
@@ -228,5 +264,23 @@ body{
 }
 
 .total {
-    color: #EA9C9C;
+    color: #47e251;
+}
+
+.btn {
+    margin-bottom: 25%;
+    
+}
+
+.botaoAdicionarMaisMenos {
+    margin-left: 50%;
+}
+
+.adicionarBotao {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 100px;
+    text-align: center;
+    margin: 0;
 }
