@@ -11,6 +11,52 @@ h2{
     background-color: var(--background);
 }
 
+.icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#icons-list{
+    width: 100%;
+    height: 38px;
+    margin: 0;
+
+    text-decoration: none;
+    background: none;
+    color: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid #fff;
+    --bs-border-opacity: 1;
+    border-color: rgba(var(--bs-secondary-rgb),var(--bs-border-opacity));
+
+    padding: 0 15px;
+    transition: 0.5s;
+}
+
+.selected-item{
+    background-color: #2B2B2B;
+}
+
+#icons-list::selection{
+    background-color: #2B2B2B;
+}
+
+.previewIcone{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    text-align: center;
+    justify-items: center;
+    font-size: 3rem;
+}
+
+.iconsPreview{
+    width: 100%;
+    height: 100%;
+}
+
 .values-list  li{
 background-color: #2B2B2B;
 color: #fff;
@@ -47,12 +93,13 @@ font-size: 1.2rem;
     justify-content: left;
 }
 
-.card ul li:nth-child(4) img{
-    margin-right: 35px;
-}
-
 .card ul li p{
     margin: 0;
+}
+
+.card button{
+    background: none;
+    border: none;
 }
 
 
@@ -77,6 +124,14 @@ font-size: 1.2rem;
     border-bottom: 1px solid var(--secundaria);
 }
 
+.card-metas .metas{
+    margin-top: 30px;
+}
+
+.card-metas .metas:nth-child(1){
+    margin-top: 20px;
+}
+
 .card-metas ul li{
     background: transparent;
     display: flex;
@@ -86,7 +141,8 @@ font-size: 1.2rem;
 }
 
 .card-metas ul li img{
-    max-width: 10%;
+    max-width: 30%;
+    border-radius: 5px;
 }
 
 .card-metas .content-data{
@@ -116,7 +172,7 @@ font-size: 1.2rem;
 .card-metas .content-data .top-content p{
     color: var(--secundaria);
     font-family: Poppins;
-    font-size: 70%;
+    font-size: 80%;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -141,22 +197,15 @@ font-size: 1.2rem;
     color: #fff;
 }
 
-.mid-content p{
-    font-size: 0.6rem;
-}
-
 .mid-content p strong{
     color: var(--secundaria);
 }  
 
 .mid-content a{
-    display: flex;
-    justify-content: flex-end;
-    height: 100%;
+    text-align: end;
 }
 
 .mid-content button img{
-    width: 100%;
 }
 
 .bottom-content{
@@ -166,7 +215,6 @@ font-size: 1.2rem;
 
 .bottom-content p{
     color: #FFF;
-    font-size: 0.6rem;
 }
 
 .bottom-content p strong{
@@ -183,7 +231,7 @@ font-size: 1.2rem;
     border: none;
 
     position: fixed;
-    bottom: 15%;
+    bottom: 10%;
 }
 
 /* --- END SECOND CARD --- */
@@ -197,7 +245,7 @@ font-size: 1.2rem;
 .input-icon{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 60%;
 }
 
 .input-icon .form-icon{
@@ -205,3 +253,26 @@ font-size: 1.2rem;
     width: 100%;
 }
 
+/* --- MEDIA QUERIES --- */
+@media(max-width:320px) {
+    .mid-content p{
+        font-size: 0.7rem;
+    }
+
+    .bottom-content p{
+        font-size: 0.7rem;
+    }
+
+    .card-metas ul li img{
+        max-width: 20%;
+    }
+
+    .footer-card button{
+        background-color: transparent;
+        border: none;
+    
+        position: fixed;
+        bottom: 15%;
+    }
+
+}
