@@ -164,8 +164,8 @@
         </section>
       </div>
 
-      <div class="container"  id="divInicial" >
-        <div class="row "style="display: block;">
+      <div class="container">
+        <div class="row ">
           <div class="col-sm d-flex text-center align-items-center">
             <p class="fs-2 bold wrap">Você ainda não possui rendas cadastradas...</p>
           </div>
@@ -175,7 +175,7 @@
         </div>
       </div>
     
-      <div class="container" id="divParaAdicionar" style="display: none;">
+      <div class="container">
         <div class="row justify-content-center align-items-center mb-5"  >
           <div class="col-3 colunas">
             <svg class="imagemExemplo" xmlns="http://www.w3.org/2000/svg" height="4em" viewBox="0 0 576 512">
@@ -332,19 +332,6 @@
 
     document.getElementById('despesaData').setAttribute('max', currentDate);
   </script>
-
-<script>
-  // Função para ser executada quando o botão for clicado
-  function adicionarDiv() {
-    // Mostrar a div que você quer adicionar
-    document.getElementById('divParaAdicionar').style.display = 'block';
-    // Esconder a div inicial
-    document.getElementById('divInicial').style.display = 'none';
-  }
-
-  // Adicionar um ouvinte de evento ao botão
-  document.getElementById('acaoClique').addEventListener('click', adicionarDiv);
-</script>
 
 </body>
 
