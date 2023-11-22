@@ -128,13 +128,9 @@ body{
 
 
 .imagemExemplo {
-    width: 20%;
-    max-width: 20%;  /*maximo de largura que ela chega quando a tela aumenta*/
-    min-width: 20%;
-}
-
-.imagemExemplo{
-    max-width: 1%;
+    width: 50%;
+    max-width: 50%; /*maximo de largura que ela chega quando a tela aumenta*/
+    min-width: 50%;
 }
 
 .nomeDespesa {

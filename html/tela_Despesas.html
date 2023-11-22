@@ -26,11 +26,12 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="menuNavbar" toggle="collapse" data-target=".navbar-collapse">
-              <div class="navbar-nav ms-auto itens">
-                <a class="nav-link active" aria-current="page" href="#home">Renda</a>
+              <div class="navbar-nav ms-auto itens">                
+                <a class="nav-link" aria-current="page" href="./home.html">Início</a>
+                <a class="nav-link active" aria-current="page" href="./rendas.html">Renda</a>
                 <a class="nav-link" aria-current="page" href="./tela_Despesas.html">Extrato</a>
-                <a class="nav-link" aria-current="page" href="#contato">Metas</a>
-                <a class="nav-link" aria-current="page" href="./home.html">Meus Dados</a>
+                <a class="nav-link" aria-current="page" href="./goals.html">Metas</a>
+
               </div>
               <div class="navbar-nav">
                 <div class="user-profile dropdown dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -143,12 +144,11 @@
     
                       <label for="despesaData">Data:</label>
                       <input class="inputGroup" type="date" id="rendaData" name="data" required>
+                      <button type="submit" class="botaoDespesa btn btn-primary"
+                      style="background-color: #198754; border: none;">Salvar</button>
                     </form>
                   </div>
-                  <div class="modal-footer" style="background-color: #424242;;">
-    
-                    <button type="button" class="botaoDespesa btn btn-primary"
-                      style="background-color: #198754;">Salvar</button>
+                  <div class="modal-footer" style="background-color: #424242;">
                   </div>
                 </div>
               </div>
@@ -185,12 +185,18 @@
                     <h6 class="nomeRecorrencia">Mensal</h6>
                     <h6>08/10</h6>
                 </div>
-                <div class="col-4 colunas d-flex align-items-center">
+                <div class="botoesExtrato col-4 colunas d-flex align-items-center">
                     <p class="netflix precoMoeda me-2">R$</p>
                     <p class="netflix precoDespesa ">38,00</p>
                     <div class="botaoAdicionarMaisMenos d-flex align-items-center">
-                        <button class="btn btn-success me-2 ">&plus;</button>
-                        <button class="btn btn-danger">&minus;</button>
+                      <!-- Button trigger modal -->  
+                      <button type="button" class="btn btn-primary" style="background-color: #198754; border: none;" data-bs-toggle="modal" data-bs-target="#botaoAdicionarMais">
+                        &plus;
+                      </button>               
+                      <button type="button" class="btn btn-primary btn-danger" data-bs-toggle="modal" data-bs-target="#botaoAdicionarMaisMenos">
+                        &minus;
+                      </button>
+        
                     </div>
                 </div>
                 <hr class="linha">
@@ -215,12 +221,18 @@
                     <h6 class="nomeRecorrencia">Mensal</h6>
                     <h6>08/10</h6>
                 </div>
-                <div class="col-4 colunas d-flex align-items-center">
+                <div class="botoesExtrato col-4 colunas d-flex align-items-center">
                     <p class="netflix precoMoeda me-2">R$</p>
                     <p class="netflix precoDespesa ">38,00</p>
                     <div class="botaoAdicionarMaisMenos d-flex align-items-center">
-                        <button class="btn btn-success me-2 ">&plus;</button>
-                        <button class="btn btn-danger">&minus;</button>
+                      <!-- Button trigger modal -->  
+                      <button type="button" class="btn btn-primary" style="background-color: #198754; border: none;" data-bs-toggle="modal" data-bs-target="#botaoAdicionarMais">
+                        &plus;
+                      </button>               
+                      <button type="button" class="btn btn-primary btn-danger" data-bs-toggle="modal" data-bs-target="#botaoAdicionarMaisMenos">
+                        &minus;
+                      </button>
+        
                     </div>
                 </div>
                 <hr class="linha">
@@ -245,13 +257,21 @@
                     <h6 class="nomeRecorrencia">Mensal</h6>
                     <h6>08/10</h6>
                 </div>
-                <div class="col-4 colunas d-flex align-items-center">
+                <div class="botoesExtrato col-4 colunas d-flex align-items-center">
                     <p class="netflix precoMoeda me-2">R$</p>
                     <p class="netflix precoDespesa ">38,00</p>
+
                     <div class="botaoAdicionarMaisMenos d-flex align-items-center">
-                        <button class="btn btn-success me-2 ">&plus;</button>
-                        <button class="btn btn-danger">&minus;</button>
+                      <!-- Button trigger modal -->  
+                      <button type="button" class="btn btn-primary" style="background-color: #198754; border: none;" data-bs-toggle="modal" data-bs-target="#botaoAdicionarMais">
+                        &plus;
+                      </button>               
+                      <button type="button" class="btn btn-primary btn-danger" data-bs-toggle="modal" data-bs-target="#botaoAdicionarMaisMenos">
+                        &minus;
+                      </button>
+        
                     </div>
+
                 </div>
                 <hr class="linha">
             </div>
@@ -275,19 +295,106 @@
                     <h6 class="nomeRecorrencia">Mensal</h6>
                     <h6>08/10</h6>
                 </div>
-                <div class="col-4 colunas d-flex align-items-center">
+                <div class="botoesExtrato col-4 colunas d-flex align-items-center">
                     <p class="netflix precoMoeda me-2">R$</p>
                     <p class="netflix precoDespesa ">38,00</p>
                     <div class="botaoAdicionarMaisMenos d-flex align-items-center">
-                        <button class="btn btn-success me-2 ">&plus;</button>
-                        <button class="btn btn-danger">&minus;</button>
+                      <!-- Button trigger modal -->  
+
+                      <button type="button" class="btn btn-primary" style="background-color: #198754; border: none;" data-bs-toggle="modal" data-bs-target="#botaoAdicionarMais">
+                        &plus;
+                      </button>               
+                      <button type="button" class="btn btn-primary btn-danger" data-bs-toggle="modal" data-bs-target="#botaoAdicionarMaisMenos">
+                        &minus;
+                      </button>
+        
                     </div>
+
                 </div>
                 <hr class="linha">
             </div>
           
          
             <script src="../script.js/calcularTotalMensal.js"></script>
+
+
+             <div class="botaoAdicionarMaisMenos d-flex align-items-center">  
+
+          <!-- modal  botao verde-->
+              <div class="modal fade" id="botaoAdicionarMais" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="ModalLabel">Edição de Registros:</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                      style="background-color: white;"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="formDespesa" action="#" method="post">
+              
+                      <label for="despesaDescricao">Descrição da despesa:</label>
+                      <input class="inputGroup" type="text" id="rendaDescricao" name="descricao" value="Mensalidade">
+    
+                      <label for="rendaDescricao">Tipo de despesa:</label>
+                      <select class="inputGroup" id="rendaDescricao" name="descricao" valuec>
+                        <option value="">Selecione o tipo de despesa</option>
+                        <option value="Salário" selected>Salário</option>
+                        <option value="Rendimento de investimento">Rendimento de investimento</option>
+                        <option value="Aluguel">Aluguel</option>
+                        <option value="Freelancer">Freelancer</option>
+    
+                      </select>
+    
+
+                      <label for="rendaDescricao">Recorrência da despesa:</label>
+                      <select class="inputGroup" id="rendaDescricao" name="descricao" required>
+                        <option value="" selected disabled hidden>Selecione a recorrência da despesa</option>
+                        <option value="Mensal" selected>Mensal</option>
+                        <option value="Semanal">Semanal</option>
+                        <option value="Anual">Anual</option>
+    
+                      </select>
+    
+    
+                      <label for="despesaValor">Valor:</label>
+                      <input class="inputGroup" type="number" id="rendaValor" name="valor" value="38">
+    
+                      <label for="despesaData">Data:</label>
+                      <input class="inputGroup" type="date" id="rendaData" name="data" value="2023-10-08">
+
+
+                      <button type="submit" class="botaoDespesa btn btn-primary" data-bs-dismiss="modal" style="background-color: #9450d4; border: none;">Cancelar</button>
+                      <button type="submit" id="salvarRegistro" class="botaoDespesa btn btn-primary" style="background-color: #198754; border: none;">Salvar</button>
+
+                      </div>
+                  </form>
+                </div>
+                  <div class="modal-footer" style="background-color: #424242;">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <!-- Modal botao vermelho -->
+              <div class="modal fade" id="botaoAdicionarMaisMenos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Tem certeza que deseja excluir esse registro?</p>
+                      <p>Não será possível visualizar a despesa até que você a adicione novamente!</p>
+                    </div>
+                    <div class="modal-footer" style="background-color: #424242;">
+                      <button type="submit" class="btn btn-secondary" style="background-color: #9450d4; border: none;" data-bs-dismiss="modal">Cancelar</button>
+                      <button  type="submit" id="excluirRegistro" class="btn btn-primary" style="background-color: #e43b35; border: none;">Excluir</button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
       </main>
     
 
