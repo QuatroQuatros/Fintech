@@ -26,7 +26,7 @@
     />
   </head>
 
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <header id="home mx-6">
       <nav class="navbar navbar-expand-md py-3 menu">
         <div class="container-fluid">
@@ -73,27 +73,22 @@
       </nav>
   </header>
 
-    <main class="d-flex flex-column align-items-center">
-      <div class="sm:row w-75">
-        <div class=" col d-flex justify-content-center">
-          <img src="../img/404-page-not-found.svg" alt="" class="w-50">
-        </div>
-        <div class="col d-flex align-items-center w-100">
-          <p class="fs-1 text-light fw-bold">Ops! <br> Algo não está certo.</p>
-        </div>
+  <main class="d-flex flex-column align-items-center h-100">
+    <div class="container row w-75 justify-content-center my-auto">
+      <div class="col-sm d-flex">
+        <img src="../img/404-page-not-found.svg" alt="" class="w-100">
       </div>
-      <div class="text-light fs-5 w-75 d-flex flex-column align-items-center">
-        <p class="text-wrap text-center fs-5 sm:fs-6">Desculpe pela confusão! Estamos resolvendo um probleminha. Pode tentar novamente em breve? Se o erro persistir, chame a gente. Agradecemos pela paciência!</p>
-        <button
-          type="button"
-          class="btn btn-primary fs-5 md:btn-lg"
-          data-bs-toggle="modal"
-          data-bs-target="#staticBackdrop"
-        >
+      <div class="col-sm text-light fs-5 w-75 d-flex flex-column align-items-center w-100">
+        <p class="fs-1 text-light fw-bold text-center mb-4">Ops! <br> Algo não está certo.</p>
+        <p class="text-wrap text-center fs-6 fs-sm-5">Desculpe pela confusão! Estamos resolvendo um probleminha. Pode
+          tentar novamente em breve? Se o erro persistir, chame a gente. Agradecemos pela paciência!</p>
+        <button type="button" class="btn btn-primary fs-5 btn-lg" data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop">
           Voltar
         </button>
       </div>
-    </main>
+    </div>
+  </main>
 
     <footer class="text-center text-white" id="contato" style="position: block !important;">
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
