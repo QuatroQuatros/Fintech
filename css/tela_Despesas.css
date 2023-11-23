@@ -75,6 +75,7 @@
 
 .container {
     color: var(--sla);
+    margin-right: 0px;
 }
  
 .linha {
@@ -101,9 +102,6 @@
     gap: 10px;
 } */
 
-.botaoAdicionarMaisMenos {
-    margin-left: 50%;
-}
 
 .adicionarBotao {
     display: flex;
@@ -240,6 +238,19 @@
     text-align: center;
     margin: 0;
 }
+
+li.page-item a.page-link:hover {
+    background-color: #c5c2f0b2 !important; 
+    color: #fff !important; 
+  } 
+
+/* li.page-item a.page-link.active {
+    background-color: red;
+}  */
+  /* ul.pagination li.page-item a.page-link:hover {
+    background-color: #007bff !important;
+    color: #fff !important; 
+  } */
 
 @media (max-width: 375px) {
 
