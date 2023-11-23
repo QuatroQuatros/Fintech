@@ -111,6 +111,7 @@ font-size: 1.2rem;
     text-align: center;
     border-radius: 20px;
     padding: .5rem;
+    margin: 0 0 2rem 0;
 }
 
 .card-metas h3{
@@ -140,8 +141,16 @@ font-size: 1.2rem;
 }
 
 .card-metas ul li img{
-    max-width: 30%;
+    max-width: 2rem;
     border-radius: 5px;
+}
+
+.card-metas ul li img.icon.x{
+    width: 2rem;
+    height: 2rem;
+    max-width: 2rem;
+    border-radius: 5px;
+    padding: 0.4rem;
 }
 
 .card-metas .content-data{
@@ -204,8 +213,8 @@ font-size: 1.2rem;
     text-align: end;
 }
 
-.mid-content button img{
-}
+/* .mid-content button img{
+} */
 
 .bottom-content{
     display: flex;
@@ -262,8 +271,16 @@ font-size: 1.2rem;
         font-size: 0.7rem;
     }
 
-    .card-metas ul li img{
-        max-width: 20%;
+    .card-metas ul li img.icon{
+        max-width: 1.4rem;
+    }
+
+    .card-metas ul li img.icon.x{
+        width: 1.6rem;
+        height: 1.6rem;
+        max-width: 1.6rem;
+        border-radius: 5px;
+        padding: 0.2rem;
     }
 
     .footer-card button{
@@ -276,8 +293,16 @@ font-size: 1.2rem;
 
 }
 
-@media(min-width:320px && max-width:425px) {
+@media(min-width:320px) and (max-width:425px) {
     .card-metas ul li img.icon{
         max-width: 1.6rem;
+    }
+
+    .card-metas ul li img.icon.x{
+        width: 1.6rem;
+        height: 1.6rem;
+        max-width: 1.6rem;
+        border-radius: 5px;
+        padding: 0.2rem;
     }
 }
