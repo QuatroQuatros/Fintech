@@ -90,8 +90,19 @@
         </div>
   
         <div class="col-lg-8">
+
+          <div class="row card-metas">
+            <div class="col-sm d-flex text-center align-items-center">
+              <p class="fs-2 bold wrap text-light">Você ainda não possui metas cadastradas...</p>
+            </div>
+            <div class="col-sm">
+              <img src="../img/sad-face.svg" alt="">
+            </div>
+          </div>
+
           <div class="card card-metas" style="width: 100%;">
             <h3>Minhas metas</h3>
+
             <div class="metas">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
@@ -109,9 +120,14 @@
     
                     <div class="mid-content text-sm">
                       <p class="" >Saldo total: <strong>R$20.386,00</strong></p>
-                      <a href="" data-bs-toggle="modal" data-bs-target="#editModal">
-                        <img class="img-fluid" src="../img/icons/edit.svg" alt="">
-                      </a>
+                      <div class="d-flex justify-content-between">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#editModal">
+                          <img class="img-fluid justify-content-end mx-1 icon"src="../img/icons/edit.svg" alt="">
+                        </a>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                          <img class="img-fluid justify-content-end mx-1 icon x bg-danger" src="../img/icons/xmark-solid.svg" alt="">
+                        </a>
+                      </div>                  
                     </div>
     
                     <div class="bottom-content">
@@ -140,9 +156,14 @@
     
                     <div class="mid-content text-sm">
                       <p class="" >Saldo total: <strong>R$20.386,00</strong></p>
-                      <a href="" data-bs-toggle="modal" data-bs-target="#editModal">
-                        <img class="img-fluid" src="../img/icons/edit.svg" alt="">
-                      </a>
+                      <div class="d-flex justify-content-between">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#editModal">
+                          <img class="img-fluid justify-content-end mx-1 icon"src="../img/icons/edit.svg" alt="">
+                        </a>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                          <img class="img-fluid justify-content-end mx-1 icon x bg-danger" src="../img/icons/xmark-solid.svg" alt="">
+                        </a>
+                      </div>                  
                     </div>
     
                     <div class="bottom-content">
@@ -171,9 +192,14 @@
     
                     <div class="mid-content text-sm">
                       <p class="" >Saldo total: <strong>R$20.386,00</strong></p>
-                      <a href="" data-bs-toggle="modal" data-bs-target="#editModal">
-                        <img class="img-fluid" src="../img/icons/edit.svg" alt="">
-                      </a>
+                      <div class="d-flex justify-content-between">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#editModal">
+                          <img class="img-fluid justify-content-end mx-1 icon"src="../img/icons/edit.svg" alt="">
+                        </a>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                          <img class="img-fluid justify-content-end mx-1 icon x bg-danger" src="../img/icons/xmark-solid.svg" alt="">
+                        </a>
+                      </div>                  
                     </div>
     
                     <div class="bottom-content">
@@ -191,7 +217,104 @@
               </button>
             </div>
           </div>
+
+          <div class="card card-metas" style="width: 100%;">
+            <h3>Metas Concluídas</h3>
+
+            <div class="metas">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <img src="../img/icons/home.svg" alt="">
+                  <div class="content-data">
+                    <div class="top-content"> 
+                      <h4>Mansão em Orlando</h4>
+                      <p>R$180.000,00</p>
+                    </div>
+    
+                    <!-- PROGRESS-BAR -->
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 25%"></div>
+                    </div>     
+    
+                    <div class="mid-content text-sm">
+                      <p class="" >Saldo total: <strong>R$20.386,00</strong></p>
+                    </div>
+    
+                    <div class="bottom-content">
+                      <p>Meta estimada para: <strong>08/01/2026</strong></p>
+                    </div>
+    
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="metas">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <img src="../img/icons/home.svg" alt="">
+                  <div class="content-data">
+                    <div class="top-content"> 
+                      <h4>Mansão em Orlando</h4>
+                      <p>R$180.000,00</p>
+                    </div>
+    
+                    <!-- PROGRESS-BAR -->
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 25%"></div>
+                    </div>     
+    
+                    <div class="mid-content text-sm">
+                      <p class="" >Saldo total: <strong>R$20.386,00</strong></p>
+                    </div>
+    
+                    <div class="bottom-content">
+                      <p>Meta estimada para: <strong>08/01/2026</strong></p>
+                    </div>
+    
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="metas">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <img src="../img/icons/home.svg" alt="">
+                  <div class="content-data">
+                    <div class="top-content"> 
+                      <h4>Mansão em Orlando</h4>
+                      <p>R$180.000,00</p>
+                    </div>
+    
+                    <!-- PROGRESS-BAR -->
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 25%"></div>
+                    </div>     
+    
+                    <div class="mid-content text-sm">
+                      <p class="" >Saldo total: <strong>R$20.386,00</strong></p>
+                    </div>
+    
+                    <div class="bottom-content">
+                      <p>Meta estimada para: <strong>08/01/2026</strong></p>
+                    </div>
+    
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-card">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <img src="../img/icons/add-goals.svg" alt="">
+              </button>
+            </div>
+          </div>
+
         </div>
+
+        
       </div>
     </div>
   </main>
